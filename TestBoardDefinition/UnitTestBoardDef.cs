@@ -6,7 +6,7 @@ namespace TestBoardDefinition
     [TestClass]
     public class UnitTestBoardDef
     {
-        private int[] ColorList = new int[] { 1, 2, 3 };
+        private int[] ColorList = new int[] { 1, 2, 3, 4, 5 };
 
         [TestMethod]
         [ExpectedException(typeof(IndexOutOfRangeException))]
@@ -37,9 +37,18 @@ namespace TestBoardDefinition
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void DefinitionWrongColorsNotenought()
+        public void DefinitionWrongColorsNotEnought()
         {
             var oBoard = new Check24.Game.Board(2, 2, new int[] {1});
+
+            oBoard = null;
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void DefinitionWrongColorsDuplication()
+        {
+            var oBoard = new Check24.Game.Board(2, 2, new int[] { 1, 1, 1 });
 
             oBoard = null;
         }
