@@ -7,8 +7,15 @@ namespace TestBoardDefinition
     public class UnitTestBoardSolutions
     {
         [TestMethod]
-        public void TestMethod1()
+        public void PlayTryAllColorSolution()
         {
+            Assert.Fail("Not implemented");
+        }
+
+        [TestMethod]
+        public void PlayGreedyByRowSolution()
+        {
+            Assert.Fail("Not implemented");
         }
     }
 }

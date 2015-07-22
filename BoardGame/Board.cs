@@ -149,8 +149,6 @@ namespace Check24.Game
             }
 
             BoardStatus = eBoardStatus.GameInProgress;
-
-            CheckGameStatus();
         }
 
         /// <summary>
@@ -161,7 +159,7 @@ namespace Check24.Game
         {
             // not initialized
             if (BoardStatus == eBoardStatus.NotInitialized)
-                throw new NotImplementedException("Board has not been initialized");
+                throw new ArgumentException("Board has not been initialized");
 
             if (!ColorList.Contains(_iColor))
                 throw new ArgumentOutOfRangeException("Invalid color");
@@ -170,15 +168,24 @@ namespace Check24.Game
             if (Cells[0][0] == _iColor) return;
 
             Moves++;
+
+            throw new NotImplementedException("Apply color selected: Not implemented yet");
+
+            // TODO
+            // per row colors
+            // verifica board cells status
+            // CheckGameStatus();
         }
 
         /// <summary>
-        /// Verifi if the game has finished or still in progress, apply the change in BoardStatusMember
+        /// Verify if the game has finished or still in progress, apply the change in BoardStatusMember
         /// </summary>
         private void CheckGameStatus()
         {
             // ignore action if not initialized
             if (BoardStatus == eBoardStatus.NotInitialized) return;
+
+            throw new NotImplementedException("Verify game status: Not implemented yet");
         }
     }
 }

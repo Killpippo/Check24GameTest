@@ -36,7 +36,7 @@ namespace TestBoardDefinition
         }
 
         [TestMethod]
-        [ExpectedException(typeof(NotImplementedException))]
+        [ExpectedException(typeof(ArgumentException))]
         public void BoardIncompletePlay()
         {
             var oBoard = new Check24.Game.Board(BoardWidth, BoardHeight, ColorList);
@@ -86,11 +86,39 @@ namespace TestBoardDefinition
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void BoardIncompleteInvalidPlayColor()
         {
             var oBoard = new Check24.Game.Board(BoardWidth, BoardHeight, ColorList);
 
+            BoardValues[0][0] = -1;
+
             oBoard.InitializeColors(BoardValues);
+        }
+
+        [TestMethod]
+        public void BoardPlayInconsistentMove()
+        {
+            var oBoard = new Check24.Game.Board(BoardWidth, BoardHeight, ColorList);
+                        
+            oBoard.InitializeColors(BoardValues);
+
+            oBoard.ApplyColor(BoardValues[0][0]);
+
+            Assert.AreEqual(0, oBoard.Moves);
+        }
+
+        [TestMethod]
+        public void BoardPlayValidGame()
+        {
+            var oBoard = new Check24.Game.Board(BoardWidth, BoardHeight, ColorList);
+
+            oBoard.InitializeColors(BoardValues);
+
+            for (int i = 0; i < ColorList.Length; i++)
+            {
+                oBoard.ApplyColor(ColorList[i]);
+            }
         }
     }
 }
