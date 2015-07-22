@@ -1,0 +1,5 @@
+C:\Users\Pippo\Desktop\Check24Test\BoardGame\bin\Debug\BoardGame.dll
+C:\Users\Pippo\Desktop\Check24Test\BoardGame\bin\Debug\BoardGame.pdb
+C:\Users\Pippo\Desktop\Check24Test\BoardGame\obj\Debug\BoardGame.csprojResolveAssemblyReference.cache
+C:\Users\Pippo\Desktop\Check24Test\BoardGame\obj\Debug\BoardGame.dll
+C:\Users\Pippo\Desktop\Check24Test\BoardGame\obj\Debug\BoardGame.pdb

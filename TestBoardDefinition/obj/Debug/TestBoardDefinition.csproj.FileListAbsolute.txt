@@ -1,0 +1,7 @@
+C:\Users\Pippo\Desktop\Check24Test\TestBoardDefinition\obj\Debug\TestBoardDefinition.csprojResolveAssemblyReference.cache
+C:\Users\Pippo\Desktop\Check24Test\TestBoardDefinition\bin\Debug\TestBoardDefinition.dll
+C:\Users\Pippo\Desktop\Check24Test\TestBoardDefinition\bin\Debug\TestBoardDefinition.pdb
+C:\Users\Pippo\Desktop\Check24Test\TestBoardDefinition\obj\Debug\TestBoardDefinition.dll
+C:\Users\Pippo\Desktop\Check24Test\TestBoardDefinition\obj\Debug\TestBoardDefinition.pdb
+C:\Users\Pippo\Desktop\Check24Test\TestBoardDefinition\bin\Debug\BoardGame.dll
+C:\Users\Pippo\Desktop\Check24Test\TestBoardDefinition\bin\Debug\BoardGame.pdb
